@@ -4,6 +4,7 @@
 #include<stdlib.h>
 #include<time.h>
 
+
 #define LEFT 75
 #define RIGHT 77
 #define UP 72
@@ -143,6 +144,7 @@ void move(int dir){
         length++;
         x[length]=x[length-1]; 
         y[length]=y[length-1];
+        speed-=3;
         food();
     }
     for (i = 1; i <= length; i++)
